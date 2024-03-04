@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    animation: fadeInLeftBig;
+    animation-duration: .6s;
+}
+
+header > ul{
+    margin-left: 30px;
+    margin-top: 20px;
+    display: flex;
+    list-style-type: none;
+    padding: 2px;
+}
+
+header > ul > li{
+    margin-right: 20px;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+}
+
+header > ul > li:hover{
+    color: #0092E4;
+    transition: .5s;
+}
+
+#background{
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#background video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#background::after{
+    content: '';
+    width: inherit;
+    height: inherit;
+    position: fixed;
+    inset: 0;
+    background-image: linear-gradient(109deg, rgb(10, 12, 16, 0.99) 15%, rgb(10, 12, 16, 0.7) 50%, black);
+}
+
+#img{
+    width:50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#img:hover{
+    background-color: #0090e475;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+main{
+    margin-left: 200px;
+    margin-right: 200px;
+    
+    display: flex;
+}
+
+#content{
+    margin-top: 100px;
+    width: 500px;
+}
+
+.descricao{
+    color: rgba(255, 255, 255, 0.481);
+    margin-top: 5px;
+    margin-left: 30px;
+    text-align: justify;
+    animation: fadeInLeftBig;
+    animation-duration: 2s;
+}
+
+#content2 > img{
+    width: 750px;
+    margin-left: 0px;
+    margin-right: 50px;
+    margin-top: 150px;
+
+    animation: fadeInLeftBig;
+    animation-duration: 1s;
+}
+
+#logo{
+    width: 500px;
+    animation: fadeInLeftBig;
+    animation-duration: 1.5s;
+}
+
+.btn{
+    background-color: #0092E4;
+    color: white;
+    width: 100px;
+    margin-top: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 0px 20px 0px 20px;
+    transition: .5s;
+    font-size: 1.5em;
+    
+    animation-duration: 1.5s;;
+}
+
+.btn:hover{
+    cursor: pointer;
+    border-radius: 20px 0px 20px 0px;
+    transition: .5s;
+    background-color: #FFF52B;
+    color:#FF817B ;
+}
+
+.conta{
+    background-color: #FFF52B;
+    color: black;
+    padding: 5px;
+    height: 16px;
+    border-radius: 10px;
+    
+    transition: .5s;
+}
+
+.conta:hover{
+    color: black;
+    
+    transition: .5s;
+}
